@@ -1,0 +1,96 @@
+/* Conteúdo do Header */
+
+header {
+    background-color: #0f0f0f;
+    overflow-x: hidden;
+    width: 100%;
+
+    & .header_content {
+
+        & .header-top {
+            background-color: var(--header-color);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 100px;
+
+            & img {
+                padding: 0 0 0 20px;
+            }
+
+            & strong {
+                font-size: 55px;
+                color: #fff;
+                padding: 0 20px 0 20px;
+                transition: all .3s;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.1);
+                    text-shadow: #0f0f0f 0 0 5px,
+                        #0f0f0f 0 0 10px,
+                        #0f0f0f 0 0 15px;
+                }
+            }
+        }
+
+        & .header-image {
+            width: 100%;
+            height: 80vh;
+            user-select: none;
+            background-image: url("../assets/header-photo.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & h1.header-image-text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: var(--font-title);
+                text-align: center;
+                font-size: 75px;
+                
+                z-index: 10;
+                
+
+                user-select: none;
+            }
+
+        }
+
+    }
+
+    & .header_navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+
+        & .header-link {
+            font-family: var(--font-title);
+            color: var(--main-white);
+            font-size: 25px;
+            padding: 20px;
+            text-decoration: none;
+            transition: .3s linear all;
+
+            &:hover {
+                transform: scale(1.1);
+                text-shadow: #0f0f0f 0 0 5px,
+                    #0f0f0f 0 0 10px,
+                    #0f0f0f 0 0 15px;
+            }
+        }
+
+    }
+
+}
