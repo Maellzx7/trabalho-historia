@@ -1,0 +1,54 @@
+/* Importando os estilos de outros componentes */
+
+@import url('./header.css');
+@import url('./main.css');
+@import url('./footer.css');
+@import url('./modal.css');
+@import url('./carousel.css');
+@import url('./cards.css');
+@import url('./scroll.css');
+@import url('./responsive.css');
+
+/* Importação de fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
+
+/* Definição de váriaveis */
+
+:root {
+    --font-title: "Lilita One", sans-serif;
+    --font-text: "Literata", serif;
+    --header-color: #32323280;
+    --main-white: #F1F1F1;
+    --main-black: #111111;
+    --modal-color: #202020;
+    --text-color: #3F3F46;
+    --footer-color: #0b0b0b;
+    --modal-bg: #202020;
+    --modal-title: #F1F1F1;
+    --modal-close: #F1F1F1;
+    --modal-close-hover: #F1F1F1;
+    --modal-link: #F1F1F1;
+    --modal-link-hover: #F1F1F1;
+    --carousel-bg: #202020;
+    --carousel-title: #F1F1F1;
+    --carousel-text: #F1F1F1;
+    --carousel-button: #F1F1F1;
+    --carousel-button-hover: #F1F1F1;
+    --carousel-button-bg: #F1F1F1;
+}
+
+/* Configurações globais */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-text);
+    color: var(--main-white);
+    background-color: var(--main-black);
+background-image: image();
+    display: flex;
+    flex-direction: column;
+}
